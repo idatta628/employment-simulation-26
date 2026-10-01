@@ -1,0 +1,26 @@
+[project]
+name = "employment-simulation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dattais2", email = "ishan.datta@mail.utoronto.ca" },
+    { name = "user2", email = "user2@email.website"}
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "mesa>=3.5.1",
+    "networkx>=3.6.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pathlib>=1.0.1",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+employment-simulation = "employment_simulation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
